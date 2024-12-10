@@ -1,0 +1,258 @@
+/* Main container */
+.main-display {
+    height: calc(100vh - 45px);
+    margin: 10px 5%;
+    background-color: #DAEDFE;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Header section */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    height: 5%;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+#heading {
+    font-size: 1.5rem;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.lead-assg {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.lead-assg:hover {
+    background-color: #45a049;
+    /* width: -100px; */
+}
+
+/* Filter section */
+.filter-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.filter-card {
+    flex: 1 1 calc(25% - 20px);
+    min-width: 150px;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: #A1D1FF;
+    border-radius: 8px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.filter-card label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Data Tabs */
+.data-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.data-tab {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.data-tab.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.icons-section {
+    margin-left: auto;
+}
+
+.clear-filter {
+  padding: 8px 12px;
+  background: linear-gradient(45deg, #FF6347, #FF4500);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.clear-filter:hover {
+  background: linear-gradient(45deg, #780c0c, #FF4500);
+}
+
+
+/* Horizontal Scroll */
+.horizontal-scroll {
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+        width: 120px;
+    }
+
+    #heading {
+        font-size: 1.2rem;
+    }
+
+    .filter-card {
+        flex: 1 1 100%;
+    }
+
+    .data-tab {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+
+    .modal {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #heading {
+        font-size: 1rem;
+    }
+
+    .lead-assg {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    .filter-card {
+        flex: 1 1 100%;
+        margin: 5px 0;
+    }
+}
+
+/* Example Media Query */
+@media screen and (min-width: 1200px) {
+    table {
+        font-size: 1.5rem; /* Larger font size for larger screens */
+    }
+
+    button {
+        padding: 1.5em 2.5em;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    table {
+        font-size: 0.8rem; /* Smaller font size for smaller screens */
+    }
+
+    button {
+        padding: 0.5em 1em;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+td, th {
+  border: 1px solid black; /* Darker and thicker borders for all cells */
+}
+table {
+  border: 1px solid black; /*Adds a dark border around the table*/
+  border-collapse: collapse;/* Ensures that borders don't double up*/
+}
+
+/* Example CSS */
+table {
+    width: 80%; /* Scales with the screen width */
+    font-size: 1.1rem; /* Scales relative to root font size */
+}
+
+h1, h2, h3 {
+    font-size: 2vw; /* Scales with viewport width */
+}
+
+button {
+    padding: 1vw 2vw; /* Scales with viewport width */
+}
+
+

@@ -1,0 +1,98 @@
+.scroll-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.scroll-content {
+  width: 100%;
+  max-width: 1600px;
+  /* height: 10%; */
+  margin: 0 auto;
+}
+
+.table-container {
+  max-height: 460px; /* Restrict table height */
+  overflow-y: auto; /* Add scroll for overflow */
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* padding: 10px; */
+  width: 100%;
+}
+
+/* table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #e6f2ff;
+}
+
+th,
+td {
+  padding: 4px 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+tbody tr:hover {
+  background-color: #f9f9f9;
+} */
+
+.assign-button {
+  font-size: 12px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.assign-button:hover {
+  background-color: #0056b3;
+}
+
+/* Set a maximum height for table rows */
+table tr {
+  max-height: 3em; /* Adjust to fit two lines */
+  white-space: normal; /* Allow wrapping of text */
+  overflow: hidden;
+}
+
+/* Stretch cells horizontally but not vertically */
+table td, table th {
+  white-space: nowrap; /* Prevent vertical stretching */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+}
+
+/* Allow horizontal stretching */
+table {
+  /* table-layout: auto; */
+  /* width: 200%; */
+}
+
+/* Optional: Ensure headers and cells align properly */
+table th, table td {
+  word-wrap: break-word; /* Wrap long words */
+  padding: 8px;
+  text-align: left;
+}
+
+.table-head {
+  /* Optional: to ensure the header stays above other content */
+}
+
+th{
+  position: sticky;
+  top: 0;
+  background-color: white; /* Optional: to ensure the header has a background */
+  /* z-index: 1000; */
+}
